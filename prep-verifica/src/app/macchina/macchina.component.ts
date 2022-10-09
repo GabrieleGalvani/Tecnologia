@@ -1,4 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input // <--- aggiungi questo
+ } from '@angular/core';
 
 @Component({
   selector: 'app-macchina',
@@ -6,13 +10,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./macchina.component.css']
 })
 export class MacchinaComponent implements OnInit {
-  @Input() name: string;
-  pezzi: string[];
-  constructor() { 
-    this.pezzi = ['Bulloni', 'Viti', 'Ferro']
+  @Input() mac: string; // <-- Aggiungi la notazione @input
+  pezzi: string[]
+  constructor() {
+     this.pezzi=['viti','bulloni','ferro']
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit() {}
 }
