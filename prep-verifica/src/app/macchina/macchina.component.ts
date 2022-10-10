@@ -10,7 +10,7 @@ import {
   styleUrls: ['./macchina.component.css']
 })
 export class MacchinaComponent implements OnInit {
-  @Input() mac: string; // <-- Aggiungi la notazione @input
+  @Input() mac: string=""; // <-- Aggiungi la notazione @input
   pezzi: string[]
   constructor() {
      this.pezzi=['viti','bulloni','ferro']
